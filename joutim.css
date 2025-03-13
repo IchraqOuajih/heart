@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Appliquer l'animation de clignotement à l'image */
+.clignoter img {
+  animation: clignoter 1s infinite;
+  height: 300px;
+}
+
+/* Appliquer l'animation de clignotement au texte h1 */
+.jou {
+  animation: clignoter 1s infinite;
+  color: rgb(182, 13, 13); /* Assurez-vous que le texte soit visible pendant le clignotement */
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem; /* Vous pouvez ajuster la taille du texte selon vos préférences */
+}
+
